@@ -1,13 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   const tableBody = document.querySelector("tbody"); // Assuming you have only one table body in your HTML
-  let a = [];
   const alluser = JSON.parse(localStorage.getItem("userdetails"));
-  console.log(alluser);
-  a.push(alluser);
 
-  console.log(a);
-  a.forEach((user) => {
-    console.log(user);
+  alluser.map((user) => {
     const row = document.createElement("tr");
     row.innerHTML = `
               <td>${user.id}</td>

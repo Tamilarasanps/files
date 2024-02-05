@@ -49,11 +49,18 @@ button.addEventListener("click", (e) => {
     Category: Category.value,
   };
 
-  // console.log(userdetails.description);
-  localStorage.setItem("userdetails", JSON.stringify(userdetails));
-  window.location.reload();
-  console.log(userdetails);
+  if (localStorage.getItem("userdetails") === null) {
+    const details = []
+    details.push(userdetails)
+    localStorage.setItem("userdetails", JSON.stringify(details))
+  }
+  else {
+    const details = JSON.parse(localStorage.getItem("userdetails"))
+    details.push(userdetails)
+    localStorage.setItem("userdetails", JSON.stringify(details))
+  }
 
+  window.location.reload();
   alert("user create successfully");
 });
 

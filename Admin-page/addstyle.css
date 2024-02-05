@@ -1,0 +1,85 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.a {
+  background-color: rgb(0, 0, 255);
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 50px;
+  padding-left: 18px;
+  padding-top: 1px;
+  margin-left: 20px;
+  font-family: "Poppins", sans-serif;
+}
+.top {
+  display: flex;
+  margin-top: 20px;
+  /* width: 300px; */
+  /* border-right: 2px solid black; */
+}
+.strt {
+  margin-left: 14px;
+  margin-top: 10px;
+}
+#menu {
+  margin-left: 20px;
+  /* font-size: 20px; */
+  width: 300px;
+  height: 0px;
+  /* padding-top: 5px; */
+}
+.bar {
+  display: flex;
+  gap: 10px;
+  /* padding-bottom: px; */
+  transition: transform 0.3s ease;
+}
+.bar:hover {
+  transform: translateX(15px);
+}
+.for {
+  width: 400px;
+  margin-left: 50px;
+}
+.container {
+  display: flex;
+}
+.container_left {
+  margin-left: 40px;
+}
+.file {
+  display: flex;
+  margin-top: 15px;
+  width: 500px;
+}
+.text {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+#rightside {
+  margin-left: 350px;
+  /* width: 200px; */
+  margin-top: -120px;
+}
+.container-2 {
+  margin-left: -60px;
+}
+.name {
+  margin-left: 350px;
+  margin-top: -40px;
+}
+#btn {
+  margin-left: 850px;
+  margin-top: -200px;
+}
+#tem {
+  height: 600px;
+}
+.pro {
+  margin: -90px 0px 0px 380px;
+}
+#btnpro {
+  margin: -60px 0px 0px 1200px;
+}
